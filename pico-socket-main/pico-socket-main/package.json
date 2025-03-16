@@ -1,0 +1,39 @@
+{
+  "name": "pico-socket",
+  "version": "2.0.0",
+  "description": "Server and Client library for adding Online Multiplayer to Pico-8",
+  "bin": "./bin/pico-socket.js",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "sample": "cd sample && node ../bin/pico-socket.js",
+    "test": "jest --watch ./bin",
+    "test:ci": "jest",
+    "int": "jest --watch --env=jsdom ./integration-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRJurman/pico-socket.git"
+  },
+  "author": "Jesse Jurman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JRJurman/pico-socket/issues"
+  },
+  "homepage": "https://github.com/JRJurman/pico-socket#readme",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
+    "nightmare": "^3.0.2",
+    "nightmare-window-manager": "^0.2.2"
+  }
+}
